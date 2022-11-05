@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import { render } from 'react-dom';
 
-export const Hello = () => {
-  const [counter, setCounter] = useState(0);
-
-  const increment = () => {
-    setCounter(counter + 1);
-  };
-
-  return (
-    <div>
-      <button onClick={increment}>Click Me</button>
-      <p>You've pressed the button {counter} times.</p>
-    </div>
-  );
-};
+Hello({
+  render(){
+    console.log(ViewModel.loadComponent({}))
+    let cmp = ViewModel.loadComponent({
+      hv: 3
+    })
+    return (
+      <div>
+        <p>You've pressed the button times.</p>
+      </div>
+    );
+   }
+  }
+);
