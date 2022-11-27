@@ -21,7 +21,7 @@ vehicles = {"excavator": null, "cat797f": null}
 tbmodels = {}
 // mapboxgl.accessToken = 'sk.eyJ1IjoiYWQzbGZyOSIsImEiOiJjbDV3aTJqMnAwZHhqM2NuejdmNG5vOXViIn0.pPr5bIwwGub8wEojYEU8Nw'
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWQzbGZyOSIsImEiOiJjbDVnaWc1anAxbGluM2tsMWlvYXlsdXZuIn0.Rgg5v9gdsihBtNGB0Lh26Q';
-const MapAnimatePath = ({ mapProbs, pinRouteGeojson }) => {
+const MapAnimateCheckins = ({ mapProbs, pinRouteGeojson }) => {
   // const [modelTransform, setModelTransform] = useState()
   const [lngLat, setLngLat] = useState({ lng: 6.58968, lat: 45.39701 })
   const [renderer, setRenderer] = useState(null);
@@ -105,7 +105,7 @@ const MapAnimatePath = ({ mapProbs, pinRouteGeojson }) => {
 					return {
 						uid: `excavator${i}`,
 						type: 'gltf',
-						obj: 'https://raw.githubusercontent.com/kulluz/kulluz.com/main/public/taxi/scene.gltf',
+						obj: '',
 						scale: 1,
 						units: 'meters',
 						anchor: "bottom",
@@ -355,7 +355,7 @@ const MapAnimatePath = ({ mapProbs, pinRouteGeojson }) => {
   );
 };
 
-export { MapAnimatePath };
+export { MapAnimateCheckins };
 
 
 
